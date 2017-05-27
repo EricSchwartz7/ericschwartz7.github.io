@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="jquery.easing.compatibility.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+      <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">ES</span>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-right" id="links">
+              <a class="scroll" href="#one"><span class="underline">Home</span></a>
+              <a class="scroll" href="#two"><span class="underline">Projects</span></a>
+              <a class="scroll" href="#three"><span class="underline">About Me</span></a>
+            </div>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+
+      <section id="one" class="row">
+        <h1 class="greeting">Hi, I'm Eric. I build web applications.</h1><br>
+        <a href="#two" class="scroll">
+          Scroll down to see examples of my work<br>
+          <span class="glyphicon glyphicon-menu-down" />
+        </a>
+      </section>
+
+
+    <section id="two" class="row">
+      <div class="col-sm-6 animation-element slide-left">
+        <div class="title-div">
+          <a class="title" href="http://www.audioadvocate.co" target="_blank">Audio Advocate</a>
+        </div>
+        <div class="tagline">
+          Compare ratings and reviews for audio gear.<br>
+        </div>
+        <div class="text">
+          <div class="description">
+            The app uses data gathered from pro audio retailers including Amazon, Sweetwater, and Guitar Center. Sort products based on average rating, number of ratings, and price, or filter by category. Product view features individual customer reviews and ratings.<br>
+          </div>
+          <div class="tools">
+            Product card and review components were created using a <strong>ReactJS/Redux</strong> front end.
+            The back end is a <strong>Rails API</strong> which handles the sorting and filtering of products based on different criteria.
+            Data was gathered by scraping music retail websites using <strong>Nokogiri</strong>.
+            All data is stored in a <strong>PostgreSQL</strong> database.
+            <strong>Amazon’s Product Advertising API</strong> was used to generate iFrames containing reviews from Amazon.com.
+          </div>
+        </div>
+      </div>
+      <div class="image-column col-sm-6 animation-element slide-right">
+        <div class="img-wrapper">
+          <img src="aa-monitor.png" alt="aa" class="app-img" />
+          <div class="overlay">
+            <div class="overlay-text-aa">
+              <h2>Audio Advocate</h2>
+              <p>Visit Site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="three" class="row">
+      <div class="image-column col-sm-6 animation-element slide-left">
+        <div class="img-wrapper">
+          <img src="aa-monitor.png" alt="aa" class="app-img" />
+          <div class="overlay">
+            <div class="overlay-text-cp">
+              <h2>Constellation Playground</h2>
+              <p>Visit Site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 animation-element slide-right">
+        <div class="title-div">
+          <a class="title" href="http://constellationplayground.co" target="_blank">Constellation Playground</a>
+        </div>
+        <div class="tagline">
+          Compare ratings and reviews for audio gear.<br>
+        </div>
+        <div class="text">
+          <div class="description">
+            Compare ratings and reviews for audio gear.<br>
+          </div>
+          <div class="tools">
+            Created product card and review components using a ReactJS/Redux front end
+            Built a Rails API back end to sort and filter products based on different criteria
+            Scraped several music retail websites for product data using Nokogiri
+            Stored product data including reviews and ratings in a PostgreSQL database
+            Leveraged Amazon’s Product Advertising API to generate iFrames containing reviews from Amazon.com
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.container-fluid -->
+
+
+    <script>
+      $(document).ready(function(){
+
+        var $animation_elements = $('.animation-element');
+        var $window = $(window);
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
+
+        function check_if_in_view() {
+          var window_height = $window.height();
+          var window_top_position = $window.scrollTop();
+          var window_bottom_position = (window_top_position + window_height);
+
+          $.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('in-view');
+            } else {
+              $element.removeClass('in-view');
+            }
+          });
+        }
+
+
+
+        $('body').scrollspy({target: ".navbar", offset: 50});
+        $(".scroll").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, {
+              duration: 2000,
+              easing: 'easeInOutQuart'
+            }, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+
+
+    </script>
+
+
+  </body>
+</html>
