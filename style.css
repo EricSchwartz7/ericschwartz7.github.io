@@ -40,15 +40,87 @@ a, a:hover, a:active, a:visited, a:focus {
   color: rgb(124, 184, 251);
 }
 
-#two, #four {
+#two {
   text-align: right;
   background-color: rgb(240, 237, 237);
+}
+
+#two a {
+  color: #006e1b;
+}
+
+.overlay-text-aa {
+  background-color: #006e1b;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 3px;
 }
 
 #three {
   text-align: left;
   background-color: rgb(31, 30, 30);
   color: white;
+}
+
+#three a {
+  color: hsla(200, 100%, 50%, 0.8);
+}
+
+.overlay-text-cp {
+  background-color: hsla(200, 100%, 50%, 0.8);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 3px;
+}
+
+#four {
+  text-align: right;
+  background-color: #64B5F6;
+  color: black;
+}
+
+#four a {
+  color: white;
+}
+
+.overlay-text-bow {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 16px 32px;
+  border-radius: 3px;
+}
+
+#five {
+  text-align: left;
+  background-color: rgb(240, 237, 237);
+}
+
+#five a {
+  color: #337ab7;
+}
+
+.overlay-text-apf {
+  background-color: #337ab7;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 3px;
+}
+
+#six {
+  text-align: right;
+  background-color: #334249;
+  color: white;
+}
+
+#six a {
+  color: #ff3333;
+}
+
+.overlay-text-fc {
+  background-color: #ff3333;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 3px;
 }
 
 .navbar {
@@ -136,21 +208,6 @@ a, a:hover, a:active, a:visited, a:focus {
 .img-wrapper:hover .app-img {
   opacity: 0.3;
 }
-
-.overlay-text-aa {
-  background-color: #006e1b;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
-}
-
-.overlay-text-cp {
-  background-color: hsla(200, 100%, 50%, 0.8);
-  color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
-}
-
 
 .animation-element {
   opacity: 0;

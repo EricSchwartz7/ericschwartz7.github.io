@@ -88,7 +88,7 @@
       <div class="image-column col-sm-6 animation-element slide-left">
         <a href="http://www.constellationplayground.co" target="_blank">
           <div class="img-wrapper">
-            <img src="cp-monitor.png" alt="aa" class="app-img" />
+            <img src="cp-monitor.png" alt="cp" class="app-img" />
             <div class="overlay">
               <div class="overlay-text-cp">
                 <h2>Constellation Playground</h2>
@@ -122,32 +122,98 @@
     <section id="four" class="row">
       <div class="col-sm-6 animation-element slide-left">
         <div class="title-div">
-          <a class="title" href="http://www.audioadvocate.co" target="_blank">Audio Advocate</a>
+          <a class="title" href="http://www.battleofwits.co" target="_blank">Battle of Wits</a>
         </div>
         <div class="tagline">
-          Compare ratings and reviews for audio gear.<br>
+          Battle your friends in a trivia contest.<br>
         </div>
         <div class="text">
           <div class="description">
-            The app uses data gathered from pro audio retailers including Amazon, Sweetwater, and Guitar Center. Sort products based on average rating, number of ratings, and price, or filter by category. Product view features individual customer reviews and ratings.<br>
+            Play a 2-player trivia game with audio and visual feedback.<br>
           </div>
           <div class="tools">
-            Product card and review components were created using a <strong>ReactJS/Redux</strong> front end.
-            The back end is a <strong>Rails API</strong> which handles the sorting and filtering of products based on different criteria.
-            Data was gathered by scraping music retail websites using <strong>Nokogiri</strong>.
-            All data is stored in a <strong>PostgreSQL</strong> database.
-            <strong>Amazon’s Product Advertising API</strong> was used to generate iFrames containing reviews from Amazon.com.
+            Question and answer data is gathered by making <strong>Ajax</strong> calls to Open Trivia DB.
+            <strong>jQuery</strong> is used to display questions and set a response timer.
+            Audio clips are triggered to provide users with feedback upon response submission.
+            Uses the <strong>Materialize CSS</strong> framework for styling.
           </div>
         </div>
       </div>
       <div class="image-column col-sm-6 animation-element slide-right">
-        <a href="http://www.audioadvocate.co" target="_blank">
+        <a href="http://www.battleofwits.co" target="_blank">
           <div class="img-wrapper">
-            <img src="aa-monitor.png" alt="aa" class="app-img" />
+            <img src="bow-monitor.png" alt="bow" class="app-img" />
             <div class="overlay">
-              <div class="overlay-text-aa">
-                <h2>Audio Advocate</h2>
+              <div class="overlay-text-bow">
+                <h2>Battle of Wits</h2>
                 <p>Visit Site</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="five" class="row">
+      <div class="image-column col-sm-6 animation-element slide-left">
+        <a href="https://amazon-product-finder.herokuapp.com" target="_blank">
+          <div class="img-wrapper">
+            <img src="apf-monitor.png" alt="apf" class="app-img" />
+            <div class="overlay">
+              <div class="overlay-text-apf">
+                <h2>Amazon Product Finder</h2>
+                <p>Visit Site</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 animation-element slide-right">
+        <div class="title-div">
+          <a class="title" href="https://amazon-product-finder.herokuapp.com" target="_blank">Amazon Product Finder</a>
+        </div>
+        <div class="tagline">
+          A simple shopping cart app.<br>
+        </div>
+        <div class="text">
+          <div class="description">
+           Search for Amazon products and store them in a database.<br>
+          </div>
+          <div class="tools">
+            The search feature was implemented using the <strong>AWS Product Advertising API</strong>.
+            The app has a <strong>PHP</strong> back end and stores data in a <strong>MySQL</strong> database.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="six" class="row">
+      <div class="col-sm-6 animation-element slide-left">
+        <div class="title-div">
+          <a class="title" href="https://flatiron-champions.herokuapp.com" target="_blank">Flatiron Champions</a>
+        </div>
+        <div class="tagline">
+          Challenge your friends to Pokémon-like battles using Flatiron School themed students and instructors.<br>
+        </div>
+        <div class="text">
+          <div class="description">
+            Turn-based PvP game built entirely with Ruby on Rails. Gain experience with each battle and evolve your character.<br>
+          </div>
+          <div class="tools">
+            The user sign-up, login, and invitation system was created in <strong>Rails</strong> with the <strong>bcrypt</strong> gem.
+            Leveraged <strong>ActionMailer</strong> to automatically send customized email notifications in response to battle invitations.
+            Usage statistics are logged in a <strong>PostgreSQL</strong> database and displayed on an analytics page powered by <strong>Active Record</strong>.
+          </div>
+        </div>
+      </div>
+      <div class="image-column col-sm-6 animation-element slide-right">
+        <a href="https://github.com/EricSchwartz7/flatiron_champions" target="_blank">
+          <div class="img-wrapper">
+            <img src="fc-monitor.png" alt="fc" class="app-img" />
+            <div class="overlay">
+              <div class="overlay-text-fc">
+                <h2>Flatiron Champions</h2>
+                <p>View GitHub Repo</p>
               </div>
             </div>
           </div>
