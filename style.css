@@ -18,6 +18,19 @@ a, a:hover, a:active, a:visited, a:focus {
   text-decoration:none;
 }
 
+.github-links {
+  margin-bottom: 15px;
+}
+
+.overlay h2 {
+  margin-top: 15px;
+}
+
+.overlay-text {
+  padding: 16px 32px;
+  border-radius: 3px;
+}
+
 .navbar-brand {
   color: white!important;
   font-weight: bolder;
@@ -45,15 +58,13 @@ a, a:hover, a:active, a:visited, a:focus {
   background-color: rgb(240, 237, 237);
 }
 
-#two a {
+#two .title {
   color: #006e1b;
 }
 
-.overlay-text-aa {
+.overlay-text-aa, .overlay-text-aa a {
   background-color: #006e1b;
   color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
 }
 
 #three {
@@ -62,15 +73,16 @@ a, a:hover, a:active, a:visited, a:focus {
   color: white;
 }
 
-#three a {
+#three .title {
   color: hsla(200, 100%, 50%, 0.8);
 }
 
 .overlay-text-cp {
   background-color: hsla(200, 100%, 50%, 0.8);
+}
+
+.overlay-text-cp a {
   color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
 }
 
 #four {
@@ -79,15 +91,16 @@ a, a:hover, a:active, a:visited, a:focus {
   color: black;
 }
 
-#four a {
+#four .title {
   color: white;
 }
 
 .overlay-text-bow {
   background-color: #e0e0e0;
+}
+
+.overlay-text-bow a {
   color: black;
-  padding: 16px 32px;
-  border-radius: 3px;
 }
 
 #five {
@@ -95,15 +108,16 @@ a, a:hover, a:active, a:visited, a:focus {
   background-color: rgb(240, 237, 237);
 }
 
-#five a {
+#five .title {
   color: #337ab7;
 }
 
 .overlay-text-apf {
   background-color: #337ab7;
+}
+
+.overlay-text-apf a {
   color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
 }
 
 #six {
@@ -112,15 +126,16 @@ a, a:hover, a:active, a:visited, a:focus {
   color: white;
 }
 
-#six a {
+#six .title {
   color: #ff3333;
 }
 
 .overlay-text-fc {
   background-color: #ff3333;
+}
+
+.overlay-text-fc a {
   color: white;
-  padding: 16px 32px;
-  border-radius: 3px;
 }
 
 .navbar {
