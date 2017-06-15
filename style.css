@@ -1,3 +1,10 @@
+.container-fluid {
+  width:auto;
+  overflow:hidden;
+  max-width:auto;
+  padding:0 .5em;
+}
+
 section {
   padding: 10%;
 }
