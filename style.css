@@ -45,15 +45,22 @@ a, a:hover, a:active, a:visited, a:focus {
 
 #one {
   text-align: center;
-  background-image: url('mountains_smaller.jpg');
-  background-position: center;
+  background-image: url('manang.jpg');
+  background-position: bottom;
+  background-size: cover;
   padding: 25%;
   height: 100vh;
   color: white;
 }
 
+#one div{
+  margin-top: -50px;
+  text-shadow: 3px 3px 3px #3d3d3d;
+}
+
 #one a {
   color: rgb(191, 221, 255);
+  font-size: 1.5em;
 }
 
 #one a:hover {
