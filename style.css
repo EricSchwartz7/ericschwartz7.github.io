@@ -152,6 +152,24 @@ a, a:hover, a:active, a:visited, a:focus {
   color: white;
 }
 
+#concert-archive {
+  text-align: left;
+  background-color: green;
+  color: white;
+}
+
+#concert-archive .title {
+  color: orange;
+}
+
+.overlay-text-ca {
+  background-color: orange;
+}
+
+.overlay-text-ca a {
+  color: white;
+}
+
 .navbar {
   margin-bottom: 0;
   background: rgba(0,0,0,0.4);
